@@ -18,10 +18,11 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<?php
-  date_default_timezone_set('Asia/Tokyo');
-  print(date('G:i:s'));
-?>
+<?php $sum = 100+200+500+1000; ?>
+<?php $tax = 1.08; ?>
+合計金額は:<?php print($sum);?>円です。
+税込価格は:<?php print($sum*$tax);?>円です。
+
 </pre>
 </main>
 </body>    
