@@ -19,9 +19,20 @@
 <h2>Practice</h2>
 <pre>
 <?php
+for ($i=1; $i<=365; $i++) {
+    print(date('n/j/(D)', strtotime($i . 'day')));
+    print "\n";
+}
 
-print(date('n/j/(D)', strtotime('+1day')));
-// string to timestampの略 簡単に変換してくれる
+for ($i=1; $i<=365; $i++) :
+    print(date('n/j/(D)', strtotime($i . 'day')));
+    print "\n";
+endfor;
+// { }ではなく、 コロン〜endfoge もわかりやすいためよくつかわれる
+
+while(...) :
+    ...
+endwhile;
 
 ?>
 
