@@ -19,6 +19,12 @@
 <h2>Practice</h2>
 <pre>
 <?php
+$week_name = ['日','月','火','水','木','金','土'];
+// 各カッコはブラケットともいう
+print (date('w'))
+// wは曜日を数字で表示する今回は0 
+print($week_name[date('w')]);
+// date('w')は0なので、$week_name[0]となり、日が表示される！！
 
 ?>
 
