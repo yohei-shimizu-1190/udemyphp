@@ -19,9 +19,10 @@
 <h2>Practice</h2>
 <pre>
 <?php
-print(date('n/j/(D)', time() + 60 * 60 * 24));
-// ↑明日の時間を表示させた
-// print(time());タイムスタンプを表示（1970/1/1 を0 としたもの）
+
+print(date('n/j/(D)', strtotime('+1day')));
+// string to timestampの略 簡単に変換してくれる
+
 ?>
 
 </pre>
